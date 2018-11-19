@@ -1,1 +1,140 @@
-/* happy stylin */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+}
+
+main {
+    display: flex;
+    height: auto;
+    width: 100vw;
+
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.imageOne {
+    width: 100vw;
+    height: auto;
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+img {
+    flex:0 1 auto;
+    width: 100vw;
+    height: auto;
+    
+
+}
+
+.imgToggle {
+    width: 50vw;
+}
+
+h2, p {
+    color: white;
+    flex: 0 1 auto;
+    margin: .25vh 3vh;
+    font-family: 'Roboto Mono', monospace;
+}
+
+input, button {
+    flex: 0 0 auto;
+    margin: .25em;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.input {
+    display:flex;
+    /* height: 4vh;
+    min-height: 4vh; */
+    width: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.landingPage {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.videoWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    background: black;
+    padding: .25em .30em;
+    z-index: 1;
+    opacity: .25;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    border: 3px white solid;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    
+}
+
+h1:hover {
+    opacity: .25;
+    transform: skew(-10deg);
+    transition-duration: .5S;
+    border: 3px black solid;
+    background-color: whitesmoke;
+    color: black;
+    animation: shake 2s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
